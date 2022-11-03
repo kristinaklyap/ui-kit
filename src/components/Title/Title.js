@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 const Title = ({headingLevel = 3, ...props}) => {
     const Tag = `h${headingLevel}`;
     const bordered = props.bordered ? classes.bordered : '';
-    console.log(bordered)
     const componentClasses = [classes.title, classes[props.alignment], bordered].join(' ');
 
     return (
@@ -23,7 +22,7 @@ Title.propTypes = {
     /**
      * How large should the Title be?
      */
-    headingLevel: PropTypes.oneOf(['1', '2', '3','4','5','6']),
+    headingLevel: PropTypes.oneOf([1,2,3,4,5,6]),
     /**
      * Should we add the border to the Title component?
      */
@@ -37,7 +36,7 @@ Title.propTypes = {
 
 Title.defaultProps = {
     label: 'My fancy Title',
-    headingLevel: 3,
+    headingLevel: 1,
     bordered: false,
     alignment: 'to_left'
 };

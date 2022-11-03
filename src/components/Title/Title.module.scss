@@ -1,4 +1,6 @@
 @use "./src/styles/fonts";
+@use "./src/styles/colors";
+@use "./src/styles/theme";
 
 $fonts: ("h1": fonts.$like-h1, "h2": fonts.$like-h2, "h3": fonts.$like-h3, "h4": fonts.$like-h4, "h5": fonts.$like-h5, "h6": fonts.$like-h6);
 
@@ -21,7 +23,7 @@ $fonts: ("h1": fonts.$like-h1, "h2": fonts.$like-h2, "h3": fonts.$like-h3, "h4":
     &:after {
       content: '';
       height: 2px;
-      background: var(--theme-color);
+      background-color: var(--theme-color);
       width: 100px;
       position: absolute;
       bottom: -20px;
@@ -62,3 +64,4 @@ $fonts: ("h1": fonts.$like-h1, "h2": fonts.$like-h2, "h3": fonts.$like-h3, "h4":
   }
 
 }
+
