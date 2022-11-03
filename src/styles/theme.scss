@@ -1,0 +1,13 @@
+@use 'colors';
+
+.light {
+  --theme-color: #{colors.$secondary-color};
+  --theme-page-background: #FFF;
+  --theme-page-text: #333;
+}
+
+.dark {
+  --theme-color: #{colors.$primary-color};
+  --theme-page-background: #111;
+  --theme-page-text: #FFF;
+}

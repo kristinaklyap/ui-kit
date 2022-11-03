@@ -1,0 +1,7 @@
+.title {
+    position: relative;
+    color: var(--theme-color);
+    &:hover {
+        border-bottom: 1px solid blue;
+    }
+}
