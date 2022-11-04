@@ -1,0 +1,38 @@
+@use './src/styles/fonts';
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-color);
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 0 8px 0 rgba(224, 224, 224, 1);
+  border-radius: 4px;
+  &.small {
+    height: 50px;
+    width: 50px;
+  }
+
+  &.medium {
+    height: 75px;
+    width: 75px;
+  }
+
+  &.large {
+    height: 100px;
+    width: 100px;
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+
+  span {
+    font-size: 36px;
+    line-height: 1em;
+    position: relative;
+    top: 2px;
+    pointer-events: none;
+  }
+}
