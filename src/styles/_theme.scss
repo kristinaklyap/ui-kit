@@ -1,13 +1,13 @@
-@use 'colors';
+@use 'colors' as *;
 
 .light {
-  --theme-color: #{colors.$secondary-color};
-  --theme-page-background: #FFF;
-  --theme-page-text: #333;
+  --theme-color: #{$secondary-color};
+  --theme-page-background: #{$tertiary-color};
+  --theme-page-text:  #{$text-color-dark};
 }
 
 .dark {
-  --theme-color: #{colors.$primary-color};
-  --theme-page-background: #111;
-  --theme-page-text: #FFF;
+  --theme-color: #{$tertiary-color};
+  --theme-page-background: #{$primary-color-dark};
+  --theme-page-text:  #{$tertiary-color};
 }
