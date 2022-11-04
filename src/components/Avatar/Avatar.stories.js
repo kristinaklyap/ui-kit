@@ -1,7 +1,5 @@
 import React from 'react';
 import Avatar from './Avatar';
-import PropTypes from "prop-types";
-import Title from "../Title/Title";
 
 export default {
     title: 'Example/Avatar',

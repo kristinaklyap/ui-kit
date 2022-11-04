@@ -1,18 +1,20 @@
 import classes from "./Avatar.module.scss";
 import PropTypes from "prop-types";
 
+const SYMBOLS = {
+    cat: '😸',
+    ghost: '👻',
+    lion: '🦁',
+    girl: '👩🏻‍💻',
+    boy: '🧑🏻‍💻',
+    ufo:'👽',
+    sheep:'🐑'
+}
+
 const Avatar = (props) => {
     const {emoji = 'cat', type = 'circle', size = 'medium'} = props;
     const avatarClasses = [classes[type], classes[size], classes['avatar']].join(' ');
 
-    const symbol = {
-        cat: '😸',
-        ghost: '👻',
-        lion: '🦁',
-        girl: '👩🏻‍💻',
-        boy: '🧑🏻‍💻'
-
-    }
     return (
         <div className={avatarClasses}>
                <span
@@ -21,7 +23,7 @@ const Avatar = (props) => {
                    aria-label={props.label ? props.label : ""}
                    aria-hidden={props.label ? "false" : "true"}
                >
-                   {symbol[emoji]}
+                   {SYMBOLS[emoji]}
                </span>
         </div>
     )
@@ -34,7 +36,7 @@ Avatar.propTypes = {
     /**
      * Choose your fav emoji :)
      */
-    emoji: PropTypes.oneOf(['cat', 'lion', 'ghost', 'girl', 'boy']),
+    emoji: PropTypes.oneOf(Object.keys(SYMBOLS)),
 
     /**
      * Choose your fav emoji :)
