@@ -39,12 +39,12 @@ Avatar.propTypes = {
     emoji: PropTypes.oneOf(Object.keys(SYMBOLS)),
 
     /**
-     * Choose your fav emoji :)
+     * Choose the shape of Avatar :)
      */
     type: PropTypes.oneOf(['circle', 'square']),
 
     /**
-     * Choose your fav emoji :)
+     * Choose the size of Avatar :)
      */
     size: PropTypes.oneOf(['small', 'medium', 'large']),
 

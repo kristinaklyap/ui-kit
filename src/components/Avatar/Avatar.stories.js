@@ -8,7 +8,6 @@ export default {
 const Template = (args) => <Avatar {...args} />;
 
 export const MyAvatar = {
-    description: 'Change between h1-h6',
     args: {
         emoji: 'cat',
         type: 'circle',

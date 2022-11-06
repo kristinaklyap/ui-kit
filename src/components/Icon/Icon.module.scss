@@ -1,0 +1,39 @@
+@use './src/styles/colors' as *;
+
+.icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: flex;
+
+  &.small {
+    width: 24px;
+    height: 24px;
+  }
+  &.medium {
+    width: 36px;
+    height: 36px;
+  }
+  &.large {
+    width: 50px;
+    height: 50px;
+  }
+  &.black img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(10%) saturate(7500%) hue-rotate(83deg) brightness(89%) contrast(101%);
+  }
+  &.white img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg) brightness(99%) contrast(107%);
+  }
+  &.grey img {
+    filter: brightness(0) saturate(100%) invert(56%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(89%) contrast(84%);
+  }
+  &.grey-dark img {
+    filter: invert(19%) sepia(0%) saturate(0%) hue-rotate(187deg) brightness(102%) contrast(97%);
+  }
+  &.forest img {
+    filter: brightness(0) saturate(100%) invert(15%) sepia(11%) saturate(2331%) hue-rotate(140deg) brightness(90%) contrast(84%);
+  }
+  &.forest-dark img {
+    filter: brightness(0) saturate(100%) invert(9%) sepia(24%) saturate(681%) hue-rotate(116deg) brightness(92%) contrast(97%);
+  }
+}
