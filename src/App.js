@@ -4,6 +4,7 @@ import './App.scss';
 import Title from "./components/Title/Title";
 import Avatar from "./components/Avatar/Avatar";
 import Icon from "./components/Icon/Icon";
+import Button from "./components/Button/Button";
 
 function App() {
     const [theme, setTheme] = useState('dark');
@@ -16,7 +17,7 @@ function App() {
             <Avatar emoji={'cat'}/>
             <Icon />
             <p>Lorem ipsum dolor sit amet</p>
-            <button onClick={changeThemeHandler}>Switch theme</button>
+            <Button icon={'beer'} type={'button--secondary'} size={'button--medium'} label={'Switch mode'}   onClick={changeThemeHandler}/>
         </div>
     );
 }
