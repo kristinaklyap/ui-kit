@@ -1,6 +1,13 @@
 import '../src/styles/_theme.scss';
 import '../src/index.css';
 
+export const decorators = [
+    (Story) => (
+        <div className={'light'}>
+            <Story />
+        </div>
+    ),
+];
 export const parameters = {
     actions: {argTypesRegex: "^on[A-Z].*"},
 
