@@ -13,12 +13,17 @@ const Button = (props) => {
         onClick
     } = props
 
-    const buttonClasses = [classes.button, classes[size], classes[type], classes[shape], (!label && classes['no-label'])].join(' ');
+
+    const iconLabel =(label && shape == 'circle') ? classes['no-label'] : '';
+    console.log('label',label)
+    console.log('shape',shape)
+    console.log('ddd',iconLabel)
+    const buttonClasses = [classes.button, classes[size], classes[type], classes[shape], iconLabel].join(' ');
 
     return (
         <button onClick={onClick && onClick} className={buttonClasses} data-mode={mode}>
             {icon && <Icon color={'grey'} type={icon} size={'small'}/>}
-            {label}
+            {shape === 'square' && label}
         </button>
     )
 }

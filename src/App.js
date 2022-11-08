@@ -18,6 +18,9 @@ function App() {
             <Icon />
             <p>Lorem ipsum dolor sit amet</p>
             <Button icon={'beer'} type={'button--secondary'} size={'button--medium'} label={'Switch mode'}   onClick={changeThemeHandler}/>
+            <Button shape='circle' icon={'facebook'} type={'button--secondary'} size={'button--medium'} label={'Switch mode'}   onClick={changeThemeHandler}/>
+            <Button shape='circle' icon={'lock'} type={'button--secondary'} size={'button--medium'} label={'Switch mode'}   onClick={changeThemeHandler}/>
+            <Button shape='circle' icon={'beer'} type={'button--secondary'} size={'button--medium'} label={'Switch mode'}   onClick={changeThemeHandler}/>
         </div>
     );
 }
