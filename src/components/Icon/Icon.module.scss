@@ -2,9 +2,52 @@
 
 .icon {
   position: relative;
-  width: 24px;
-  height: 24px;
+  padding: 10px;
   display: flex;
+  font-family: 'MyIcons', sans-serif;
+
+  &:before {
+    font-family: 'MyIcons', sans-serif;
+    font-style: normal;
+    line-height: 1em;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--theme-color)
+  }
+
+  &[data-icon='beer']:before {
+    content: '\e802';
+  }
+
+  &[data-icon='checkmark']:before {
+    content: '\e800';
+  }
+
+  &[data-icon='cancel']:before {
+    content: '\e801';
+  }
+
+  &[data-icon='facebook']:before {
+    content: '\e803';
+  }
+
+  &[data-icon='instagram']:before {
+    content: '\e804';
+  }
+
+  &[data-icon='lock']:before {
+    content: '\e805';
+  }
+
+  &[data-icon='play']:before {
+    content: '\e807';
+  }
+
+  &[data-icon='twitter']:before {
+    content: '\e809';
+  }
 
   img {
     width: 100%;
@@ -15,33 +58,52 @@
     width: 24px;
     height: 24px;
 
+    &:before {
+      font-size: 24px;
+    }
   }
+
+
   &.medium {
     width: 36px;
-    max-width: 36px ;
     height: 36px;
+
+    &:before {
+      font-size: 36px;
+    }
   }
+
   &.large {
     width: 50px;
-    max-width: 50px;
     height: 50px;
+
+    :before {
+      font-size: 50px;
+    }
   }
-  &.black img {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(10%) saturate(7500%) hue-rotate(83deg) brightness(89%) contrast(101%);
+
+  &.black {
+    color: $black-color
   }
-  &.white img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg) brightness(99%) contrast(107%);
+
+  &.white {
+    color: $white-color
   }
-  &.grey img {
-    filter: brightness(0) saturate(100%) invert(56%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(89%) contrast(84%);
+
+  &.grey {
+    color: $grey-color
   }
-  &.grey-dark img {
-    filter: invert(19%) sepia(0%) saturate(0%) hue-rotate(187deg) brightness(102%) contrast(97%);
+
+  &.grey-dark {
+    color: $dark-grey-color
   }
-  &.forest img {
-    filter: brightness(0) saturate(100%) invert(15%) sepia(11%) saturate(2331%) hue-rotate(140deg) brightness(90%) contrast(84%);
+
+  &.forest {
+    color: $primary-color
   }
-  &.forest-dark img {
-    filter: brightness(0) saturate(100%) invert(9%) sepia(24%) saturate(681%) hue-rotate(116deg) brightness(92%) contrast(97%);
+
+  &.forest-dark {
+    color: $primary-color-darker
   }
+
 }

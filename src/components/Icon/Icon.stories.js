@@ -1,18 +1,16 @@
-import React from 'react';
-import Icon from './Icon';
+import React from "react";
+import Icon from "./Icon";
 
 export default {
-    title: 'Example/Icon',
-    component: Icon,
+  title: "Example/Icon",
+  component: Icon,
 };
 const Template = (args) => <Icon {...args} />;
 
 export const MyIcon = {
-    args: {
-        type: 'beer',
-        color: 'grey',
-        size: 'medium'
-    },
+  args: {
+    type: "beer",
+    color: "forest-dark",
+    size: "medium",
+  },
 };
-
-
