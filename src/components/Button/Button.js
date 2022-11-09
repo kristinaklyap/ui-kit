@@ -24,7 +24,7 @@ const Button = (props) => {
 
   return (
     <button onClick={onClick && onClick} className={buttonClasses} data-mode={mode}>
-      {icon && <Icon color={"grey"} type={icon} size={"small"} />}
+      {icon && <Icon type={icon} size={"small"} />}
       {shape === "square" && label}
     </button>
   );
@@ -52,11 +52,10 @@ Button.propTypes = {
   /**
    * Choose the size
    */
-  size: PropTypes.oneOf(["button--small", "button--medium", "button--large"])
+  size: PropTypes.oneOf(["button--small", "button--medium", "button--large"]),
   /**
    * Choose the shape
-   */,
-  shape: PropTypes.oneOf(["circle", "square"]),
+   */ shape: PropTypes.oneOf(["circle", "square"]),
   /**
    * Choose the icon
    */

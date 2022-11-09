@@ -2,7 +2,7 @@ import classes from "../Icon/Icon.module.scss";
 import PropTypes from "prop-types";
 
 const Icon = (props) => {
-  const { type = "beer", size = "medium", color = "grey" } = props;
+  const { type = "beer", size = "medium", color } = props;
   const iconClasses = [classes.icon, classes[size], classes[color]].join(" ");
 
   return <span className={iconClasses} data-icon={type} aria-label={`${type} icon`}></span>;
@@ -37,6 +37,5 @@ Icon.propTypes = {
 
 Icon.defaultProps = {
   type: "beer",
-  color: "grey",
   size: "medium",
 };
