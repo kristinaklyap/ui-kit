@@ -6,6 +6,7 @@ import Avatar from "./components/Avatar/Avatar";
 import Icon from "./components/Icon/Icon";
 import Button from "./components/Button/Button";
 import Quote from "./components/Quote/Quote";
+import Notification from "./components/Notification/Notification";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -16,6 +17,31 @@ function App() {
     <div className={`App ${theme}`}>
       <Title bordered={true} alignment="to_center" headingLevel={1} label={"My UI Kit"} />
       <Avatar emoji={"cat"} />
+      <Notification
+        description={"My description"}
+        cancelConfig={{
+          label: "Cancel",
+          onClick: changeThemeHandler,
+          type: "button--secondary",
+        }}
+        approveConfig={{
+          label: "Confirm",
+          onClick: changeThemeHandler,
+        }}
+      />
+      {/*      <Notification
+        type={"info"}
+        title={"My title"}
+        description={"My description"}
+        cancelConfig={{
+          label: "Cancel",
+          type: "button--secondary",
+        }}
+        approveConfig={{
+          label: "Confirm",
+        }}
+      />{" "}
+      <Notification type={"error"} title={"My title"} description={"My description"} />*/}
       <Icon />
       <p>Lorem ipsum dolor sit amet</p>
       <Button

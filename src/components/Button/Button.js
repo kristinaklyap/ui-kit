@@ -13,7 +13,7 @@ const Button = (props) => {
     onClick,
   } = props;
 
-  const iconLabel = label && shape == "circle" ? classes["no-label"] : "";
+  const iconLabel = label && shape === "circle" ? classes["no-label"] : "";
   const buttonClasses = [
     classes.button,
     classes[size],
