@@ -6,16 +6,24 @@
   height: 24px;
   display: flex;
 
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
   &.small {
     width: 24px;
     height: 24px;
+
   }
   &.medium {
     width: 36px;
+    max-width: 36px ;
     height: 36px;
   }
   &.large {
     width: 50px;
+    max-width: 50px;
     height: 50px;
   }
   &.black img {
