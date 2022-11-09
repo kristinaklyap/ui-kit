@@ -1,16 +1,11 @@
 import classes from "../Icon/Icon.module.scss";
-import icons from "../../assets/icons";
 import PropTypes from "prop-types";
 
 const Icon = (props) => {
   const { type = "beer", size = "medium", color = "grey" } = props;
   const iconClasses = [classes.icon, classes[size], classes[color]].join(" ");
 
-  return (
-    <span className={iconClasses} aria-label={`${type} icon`}>
-      <img src={icons[type]} alt={`${type} icon`} />
-    </span>
-  );
+  return <span className={iconClasses} data-icon={type} aria-label={`${type} icon`}></span>;
 };
 export default Icon;
 
@@ -21,11 +16,10 @@ Icon.propTypes = {
   type: PropTypes.oneOf([
     "beer",
     "checkmark",
-    "cross",
+    "cancel",
     "facebook",
     "instagram",
     "lock",
-    "menu",
     "play",
     "twitter",
   ]),
