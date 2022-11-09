@@ -82,27 +82,27 @@
     }
   }
 
-  &.black {
+  &.black:before {
     color: $black-color
   }
 
-  &.white {
+  &.white:before {
     color: $white-color
   }
 
-  &.grey {
+  &.grey:before {
     color: $grey-color
   }
 
-  &.grey-dark {
+  &.grey-dark:before {
     color: $dark-grey-color
   }
 
-  &.forest {
+  &.forest:before {
     color: $primary-color
   }
 
-  &.forest-dark {
+  &.forest-dark:before {
     color: $primary-color-darker
   }
 
