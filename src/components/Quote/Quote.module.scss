@@ -1,0 +1,82 @@
+@use './src/styles/fonts';
+
+$fonts: ("like-h1": fonts.$like-h1,
+        "like-h2": fonts.$like-h2,
+        "like-h3": fonts.$like-h3,
+        "like-h4": fonts.$like-h4,
+        "like-h5": fonts.$like-h5,
+        "like-h6": fonts.$like-h6,
+        "like-p": fonts.$like-p,
+        "like-disclaimer": fonts.$like-disclaimer,
+);
+
+
+.quote {
+  display: block;
+  padding: 40px 0;
+  margin: 50px;
+  width: fit-content;
+  max-width: 50vw;
+  position: relative;
+
+  span {
+    word-break: break-word;
+  }
+  &:before,
+  &:after {
+    content: '\e808';
+    font-family: 'MyIcons', sans-serif;
+    font-style: normal;
+    height: 1em;
+    width: 1em;
+    display: block;
+    position: absolute;
+  }
+
+  &:before {
+    left: -1.5em;
+    top: -0.7em;
+  }
+
+  &:after {
+    right: -1.5em;
+    bottom: -1em;
+  }
+  @each $name, $size in $fonts {
+    &[data-size=#{$name}] {
+      font-size: $size;
+    }
+  }
+
+  &[data-mode='italic'] {
+    font-style: italic;
+  }
+
+  &[data-mode='bold'] {
+    font-weight: 700;
+  }
+
+  &.to_center {
+    text-align: center;
+  }
+
+  &.to_left {
+
+    text-align: left;
+  }
+
+  &.to_right {
+
+    text-align: right;
+  }
+
+  &.bordered  {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 50px;
+    max-width: calc(100% - 60px);
+    border-top: 1px solid var(--theme-color);
+    border-bottom: 1px solid var(--theme-color);
+  }
+
+}

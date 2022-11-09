@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "MyIcons";
+  src: url("../../src/assets/fonts/custom/fontello.eot");
+  src: url("../../src/assets/fonts/custom/fontello.woff") format("woff"),
+  url("../../src/assets/fonts/custom/fontello.ttf") format("opentype"),
+  url("../../src/assets/fonts/custom/fontello.svg#filename") format("svg");
+}
+
 $like-h1: 84px;
 $like-h2: 72px;
 $like-h3: 60px;
