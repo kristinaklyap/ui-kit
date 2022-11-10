@@ -1,4 +1,5 @@
 @use './src/styles/colors' as *;
+@use './src/styles/icons' as *;
 
 .icon {
   position: relative;
@@ -18,35 +19,35 @@
   }
 
   &[data-icon='beer']:before {
-    content: '\e802';
+    content: $beer;;
   }
 
   &[data-icon='checkmark']:before {
-    content: '\e800';
+    content: $checkmark;
   }
 
   &[data-icon='cancel']:before {
-    content: '\e801';
+    content: $cancel;
   }
 
   &[data-icon='facebook']:before {
-    content: '\e803';
+    content: $facebook;
   }
 
   &[data-icon='instagram']:before {
-    content: '\e804';
+    content: $instagram;
   }
 
   &[data-icon='lock']:before {
-    content: '\e805';
+    content: $lock;
   }
 
   &[data-icon='play']:before {
-    content: '\e807';
+    content: $play;
   }
 
   &[data-icon='twitter']:before {
-    content: '\e809';
+    content: $twitter;
   }
 
   img {
@@ -82,27 +83,27 @@
     }
   }
 
-  &.black {
+  &.black:before {
     color: $black-color
   }
 
-  &.white {
+  &.white:before {
     color: $white-color
   }
 
-  &.grey {
+  &.grey:before {
     color: $grey-color
   }
 
-  &.grey-dark {
+  &.grey-dark:before {
     color: $dark-grey-color
   }
 
-  &.forest {
+  &.forest:before {
     color: $primary-color
   }
 
-  &.forest-dark {
+  &.forest-dark:before {
     color: $primary-color-darker
   }
 

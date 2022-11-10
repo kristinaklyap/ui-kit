@@ -1,6 +1,5 @@
 import classes from "../Quote/Quote.module.scss";
 import PropTypes from "prop-types";
-import Button from "../Button/Button";
 
 const Quote = (props) => {
   const { alignment = "to_center", size = "like-p", content, bordered, mode } = props;
@@ -43,7 +42,7 @@ Quote.propTypes = {
   mode: PropTypes.oneOf(["italic", "bold"]),
 };
 
-Button.defaultProps = {
+Quote.defaultProps = {
   alignment: "to_center",
   content: "Don't try to be original. Just try to be good",
   size: "like-p",
