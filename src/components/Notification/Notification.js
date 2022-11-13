@@ -15,18 +15,16 @@ const Notification = (props) => {
         </div>
         {(cancelConfig || approveConfig) && (
           <div className={classes["notification-actions"]}>
-            {[cancelConfig, approveConfig].map((item) => {
-              return (
+            {[cancelConfig, approveConfig].map(
+              (item) =>
                 item && (
                   <Button
                     key={item.label}
                     onClick={item.onClick && item.onClick}
                     label={item.label}
-                    type={item.type}
                   />
                 )
-              );
-            })}
+            )}
           </div>
         )}
       </div>
@@ -40,18 +38,35 @@ Notification.propTypes = {
    * Choose your Notification type
    */
   type: PropTypes.oneOf(["success", "info", "error"]),
+
+  /**
+   * Provide the title
+   */
+  title: PropTypes.string,
+
+  /**
+   * Provide the description
+   */
+  description: PropTypes.string,
+
+  /**
+   * Provide the config for the first button
+   */
+  cancelConfig: PropTypes.PropTypes.shape({
+    onClick: PropTypes.func,
+    label: PropTypes.string,
+  }),
+  /**
+   * Provide the config for the second button
+   */
+  approveConfig: PropTypes.PropTypes.shape({
+    onClick: PropTypes.func,
+    label: PropTypes.string,
+  }),
 };
+
 Notification.defaultProps = {
   type: "success",
   title: "Notification Title",
   description: "Notification Description",
-  // cancelConfig: {
-  //   onClick: null,
-  //   label: "cancel",
-  //   type: "button--primary",
-  // },
-  // approveConfig: {
-  //   onClick: null,
-  //   label: "Confirm",
-  // },
 };
