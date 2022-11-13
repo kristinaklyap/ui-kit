@@ -7,19 +7,17 @@ export default {
 };
 const Template = (args) => <Notification {...args} />;
 
-export const MyNotification = {
-  args: {
-    type: "success",
-    title: "Notification Title",
-    description: "Notification Description",
-    cancelConfig: {
-      onClick: () => alert("Cancel btn"),
-      label: "cancel",
-      type: "button--primary",
-    },
-    approveConfig: {
-      onClick: () => alert("Approve btn"),
-      label: "Confirm",
-    },
+export const MyNotification = Template.bind({});
+MyNotification.args = {
+  type: "success",
+  title: "Notification Title",
+  description: "Notification Description",
+  cancelConfig: {
+    onClick: () => alert("Cancel btn"),
+    label: "cancel",
+  },
+  approveConfig: {
+    onClick: () => alert("Approve btn"),
+    label: "Confirm",
   },
 };
