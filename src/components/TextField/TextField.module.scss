@@ -1,0 +1,51 @@
+@use "./src/styles/fonts";
+@use "./src/styles/colors";
+@use "./src/styles/theme";
+
+$fonts: ("h1": fonts.$like-h1, "h2": fonts.$like-h2, "h3": fonts.$like-h3, "h4": fonts.$like-h4, "h5": fonts.$like-h5, "h6": fonts.$like-h6, "p": fonts.$like-p, "disclaimer":fonts.$like-disclaimer);
+
+@each $name, $size in $fonts {
+  #{$name}.textField {
+    font-size: $size;
+  }
+  [data-size=#{$name}].textField {
+    font-size: $size;
+  }
+}
+
+$weights: ("light": 300, "regular": 400, "medium":500, "semibold":600, "bold":700);
+
+@each $name, $weight in $weights {
+  [data-weight=#{$name}] {
+    font-weight: $weight;
+  }
+}
+
+.textField {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--theme-color);
+  margin: 20px 30px;
+  width: fit-content;
+  line-height: 1.5em;
+
+  &.to_center {
+    text-align: center;
+  }
+
+  &.to_left {
+    text-align: left;
+  }
+
+  &.to_right {
+    text-align: right;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+
+  &.underline {
+    padding-bottom: .3em;
+    border-bottom: 1px solid var(--theme-color);
+  }
+}
