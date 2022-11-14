@@ -24,8 +24,8 @@ $weights: ("light": 300, "regular": 400, "medium":500, "semibold":600, "bold":70
 .textField {
   font-family: 'Montserrat', sans-serif;
   color: var(--theme-color);
-  margin: 20px 30px;
-  width: fit-content;
+  min-width: fit-content;
+  width: auto;
   line-height: 1.5em;
 
   &.to_center {
