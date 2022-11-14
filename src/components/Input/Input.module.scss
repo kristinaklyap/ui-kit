@@ -1,0 +1,38 @@
+@use "./src/styles/colors";
+@use "./src/styles/fonts";
+
+.form_control {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+
+  input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid colors.$dark-grey-color;
+    border-radius: 4px;
+    padding: 0 10px;
+    background-color: colors.$tertiary-color;
+
+  }
+
+  label {
+    padding-bottom: 10px;
+  }
+
+
+  &.has_error {
+    input {
+      border-color: colors.$text-color-light;
+      background-color: colors.$text-color-light-transparency;
+    }
+
+    p {
+      max-width: 100%;
+      margin-top: 5px;
+      color: colors.$text-color-light;
+      font-size: fonts.$like-disclaimer;
+    }
+  }
+}
