@@ -1,1 +1,26 @@
-@import "theme";
+@import "spacings";
+.display-flex {
+  display: flex;
+
+  &.justify-center {
+    justify-content: center;
+  }
+
+  &.direction-column {
+    flex-direction: column;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+}
+
+a {
+  color: var(--theme-color);
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    opacity: .7;
+  }
+
+}
