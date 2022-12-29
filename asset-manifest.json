@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ui-kit/static/css/main.6874408f.css",
-    "main.js": "/ui-kit/static/js/main.3ab0fed4.js",
+    "main.css": "/ui-kit/static/css/main.ed34c46c.css",
+    "main.js": "/ui-kit/static/js/main.07375377.js",
     "static/media/fontello.eot": "/ui-kit/static/media/fontello.6e1a80f04a2f03826fd4.eot",
     "static/media/fontello.ttf": "/ui-kit/static/media/fontello.14d5db776a80a09efe58.ttf",
     "static/media/fontello.woff": "/ui-kit/static/media/fontello.aab9c7d3d24764d55c81.woff",
     "static/media/fontello.svg": "/ui-kit/static/media/fontello.18620ede5fef318fc661.svg",
     "index.html": "/ui-kit/index.html",
-    "main.6874408f.css.map": "/ui-kit/static/css/main.6874408f.css.map",
-    "main.3ab0fed4.js.map": "/ui-kit/static/js/main.3ab0fed4.js.map"
+    "main.ed34c46c.css.map": "/ui-kit/static/css/main.ed34c46c.css.map",
+    "main.07375377.js.map": "/ui-kit/static/js/main.07375377.js.map"
   },
   "entrypoints": [
-    "static/css/main.6874408f.css",
-    "static/js/main.3ab0fed4.js"
+    "static/css/main.ed34c46c.css",
+    "static/js/main.07375377.js"
   ]
 }
