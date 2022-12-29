@@ -16,9 +16,9 @@ const Header = (props) => {
         />
       </header>
       <div className={"display-flex"}>
-        <Link className={"margin-right-2 margin-top-2"} to={"/"}>
-          Home
-        </Link>
+        {/*<Link className={"margin-right-2 margin-top-2"} to={"/"}>*/}
+        {/*  Home*/}
+        {/*</Link>*/}
         <Link className={"margin-right-2 margin-top-2"} to={"/avatar"}>
           Avatar
         </Link>
