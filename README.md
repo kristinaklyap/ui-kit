@@ -1,6 +1,7 @@
 # UI Kit
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DEMO: https://kristinaklyap.github.io/ui-kit/
 
 ## Available Scripts
 Runs the app in the development mode.\
