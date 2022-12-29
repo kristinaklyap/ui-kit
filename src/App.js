@@ -35,8 +35,8 @@ function App() {
       <Header changeThemeHandler={changeThemeHandler} />
       <main>
         <Routes>
-          <Route index path="/" element={<Homepage />} />
-          <Route path="/avatar" element={<AvatarPage />} />
+          <Route index path="/" element={<AvatarPage />} />
+          <Route index path="/avatar" element={<AvatarPage />} />
           <Route path="/button" element={<ButtonPage />} />
           <Route path="/input" element={<InputPage />} />
           <Route path="/notification" element={<NotificationPage />} />
