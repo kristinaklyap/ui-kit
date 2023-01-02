@@ -16,6 +16,7 @@ Icon.propTypes = {
   type: PropTypes.oneOf([
     "beer",
     "checkmark",
+    "cross",
     "cancel",
     "facebook",
     "instagram",
