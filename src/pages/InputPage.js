@@ -1,28 +1,36 @@
 import Input from "../components/Input/Input";
 import useInput from "../hooks/use-input";
 import { isEmailValid, isInputEmpty } from "../helpers/validators";
+import Title from "../components/Title/Title";
+import TextField from "../components/TextField/TextField";
 
 const InputPage = () => {
   const {
     enteredValue: nameInput,
-    isValid: nameInputIsValid,
+    // isValid: nameInputIsValid,
     hasError: nameInputHasError,
     onChangeHandler: nameInputOnChange,
     onBlurHandler: nameInputOnBlur,
-    reset: nameInputReset,
+    // reset: nameInputReset,
   } = useInput(isInputEmpty);
 
   const {
     enteredValue: emailInput,
-    isValid: emailInputIsValid,
+    // isValid: emailInputIsValid,
     hasError: emailInputHasError,
     onChangeHandler: emailInputOnChange,
     onBlurHandler: emailInputOnBlur,
-    reset: emailInputReset,
+    // reset: emailInputReset,
   } = useInput(isEmailValid);
 
   return (
     <>
+      <Title headingLevel={4} label={"Input Component Page"}/>
+      <TextField
+          label={"Fulfill inputs to see the functionality."}
+          size={"p"}
+          alignment={"to_left"}
+      />
       <Input
         name={"user-name"}
         type={"text"}

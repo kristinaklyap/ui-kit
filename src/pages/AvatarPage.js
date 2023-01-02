@@ -7,7 +7,7 @@ const AvatarPage = () => {
   return (
     <>
       <Title headingLevel={4} label={"Avatar Component Page"} />
-      <div className={"display-flex"}>
+      <div className={"display-flex flex-wrap"}>
         <div className={"margin-right-1"}>
           <Avatar emoji={"cat"} />
           <TextField alignment={"to_center"} label={"cat"} />

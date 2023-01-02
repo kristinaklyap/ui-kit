@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Title = ({headingLevel = 3, ...props}) => {
     const Tag = `h${headingLevel}`;
     const bordered = props.bordered ? classes.bordered : '';
-    const componentClasses = [classes.title, classes[props.alignment], bordered].join(' ');
+    const componentClasses = [classes.title, classes[props.alignment], bordered, props.className].join(' ');
 
     return (
         <Tag className={componentClasses}>{props.label}</Tag>

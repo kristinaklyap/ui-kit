@@ -2,9 +2,9 @@ import classes from "./TextField.module.scss";
 import PropTypes from "prop-types";
 
 const TextField = (props) => {
-  const { tag = "p", size, weight, alignment, style, label } = props;
+  const { tag = "p", size, weight, alignment, style, label, className } = props;
 
-  const textFieldClasses = [classes.textField, classes[alignment], classes[style]].join(" ");
+  const textFieldClasses = [classes.textField, classes[alignment], classes[style], className].join(" ");
   const Tag = tag;
   return (
     <Tag data-size={size} data-weight={weight} className={textFieldClasses}>

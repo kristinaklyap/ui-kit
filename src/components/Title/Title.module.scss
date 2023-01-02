@@ -1,12 +1,17 @@
 @use "./src/styles/fonts";
 @use "./src/styles/colors";
 @use "./src/styles/theme";
+@use "./src/styles/breakpoints";
 
 $fonts: ("h1": fonts.$like-h1, "h2": fonts.$like-h2, "h3": fonts.$like-h3, "h4": fonts.$like-h4, "h5": fonts.$like-h5, "h6": fonts.$like-h6);
 
 @each $name, $size in $fonts {
   #{$name}.title {
     font-size: $size;
+
+    @media (max-width: breakpoints.$smallMobileBreakpoint) {
+      font-size: calc($size * 0.75);
+    }
   }
 }
 
@@ -63,5 +68,8 @@ $fonts: ("h1": fonts.$like-h1, "h2": fonts.$like-h2, "h3": fonts.$like-h3, "h4":
     }
   }
 
+  @media (max-width: breakpoints.$mobileBreakpoint) {
+    min-width: 100%;
+  }
 }
 

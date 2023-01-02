@@ -1,3 +1,5 @@
+@use "./src/styles/breakpoints";
+
 .header {
   display: flex;
   align-items: center;
@@ -6,5 +8,8 @@
   width: 100%;
   padding: 0 10%;
   border-bottom: 1px solid var(--theme-color);
-  box-shadow: 3px -6px 20px 0px rgb(224 224 224)
+  box-shadow: 3px -6px 20px 0px rgb(224 224 224);
+  @media (max-width: breakpoints.$mobileBreakpoint) {
+    flex-wrap: wrap;
+  }
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = (props) => {
   return (
     <>
-      <header className={classes.header}>
+      <header className={`${classes.header}`}>
         <Title bordered={true} alignment="to_left" headingLevel={3} label={"My UI Kit"} />
         <Button
           icon={"beer"}
@@ -15,7 +15,7 @@ const Header = (props) => {
           onClick={props.changeThemeHandler}
         />
       </header>
-      <div className={"display-flex"}>
+      <div className={"display-flex flex-wrap  padding-right-2 padding-left-2"}>
         {/*<Link className={"margin-right-2 margin-top-2"} to={"/"}>*/}
         {/*  Home*/}
         {/*</Link>*/}
