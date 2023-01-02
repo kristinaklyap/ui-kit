@@ -4,11 +4,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 100vw;
+  max-width: breakpoints.$contentContainerWidth;
   width: 100%;
-  padding: 0 10%;
+  padding: 0 20px;
   border-bottom: 1px solid var(--theme-color);
-  box-shadow: 3px -6px 20px 0px rgb(224 224 224);
+  margin-bottom: 30px;
+
+  .logo {
+    padding: 10px;
+    svg {
+      path {
+        fill: var(--theme-color);
+      }
+    }
+  }
   @media (max-width: breakpoints.$mobileBreakpoint) {
     flex-wrap: wrap;
   }
