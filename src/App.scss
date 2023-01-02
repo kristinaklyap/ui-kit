@@ -1,14 +1,22 @@
 @import "./styles/theme";
 .App {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   min-height: 100vh;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
   background: var(--theme-page-background);
   color: var(--theme-page-text);
+
+  main {
+    padding: 0 15px;
+    display: block;
+    width: 100%;
+  }
 }
 
 

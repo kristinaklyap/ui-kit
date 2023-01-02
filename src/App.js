@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Route, Routes, Navigate, useLocation} from "react-router-dom";
+import {Route, Routes, Navigate} from "react-router-dom";
 
 import "./App.scss";
 import AvatarPage from "./pages/AvatarPage";
@@ -22,7 +22,7 @@ function App() {
         <div className={`App ${theme}`}>
             {/*header here*/}
             <Header changeThemeHandler={changeThemeHandler}/>
-            <main>
+            <main className={`padding-right-2 padding-left-2`}>
                 <Routes>
                     <Route index path="/" element={<Navigate to={"/avatar"} replace/>}/>
                     <Route index path="/avatar" element={<AvatarPage/>}/>

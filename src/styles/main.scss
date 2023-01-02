@@ -1,7 +1,11 @@
 @import "spacings";
 .display-flex {
   display: flex;
+  flex-wrap: wrap;
 
+  &.no-wrap {
+    flex-wrap: nowrap;
+  }
   &.justify-center {
     justify-content: center;
   }

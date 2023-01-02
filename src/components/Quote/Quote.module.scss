@@ -16,7 +16,8 @@ $fonts: ("like-h1": fonts.$like-h1,
   padding: 40px 0;
   margin: 50px;
   width: fit-content;
-  max-width: 50vw;
+  max-width: 100%;
+  min-width: 30%;
   position: relative;
 
   span {
@@ -45,6 +46,7 @@ $fonts: ("like-h1": fonts.$like-h1,
   @each $name, $size in $fonts {
     &[data-size=#{$name}] {
       font-size: $size;
+      margin: 50px calc($size *2);
     }
   }
 
