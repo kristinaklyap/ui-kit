@@ -1,3 +1,4 @@
+@use './styles/breakpoints';
 @import "./styles/theme";
 .App {
   width: 100%;
@@ -16,6 +17,7 @@
     padding: 0 15px;
     display: block;
     width: 100%;
+    max-width: breakpoints.$contentContainerWidth;
   }
 }
 

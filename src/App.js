@@ -13,7 +13,7 @@ import TitlePage from "./pages/TitlePage";
 import Header from "./layout/header/Header";
 
 function App() {
-    const [theme, setTheme] = useState("dark");
+    const [theme, setTheme] = useState("light");
     const changeThemeHandler = () => {
         theme === "dark" ? setTheme("light") : setTheme("dark");
     };
