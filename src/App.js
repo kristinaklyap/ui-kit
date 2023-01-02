@@ -37,7 +37,7 @@ function App() {
                 </Routes>
             </main>
             <footer>
-                <TextField tag={'h6'} size={'disclaimer'} weight={'light'} label={'® Created by Kristina Klyap'}/>
+                <TextField tag={'h6'} size={'disclaimer'} weight={'light'} label={'® Created by Kristinka Klyap'}/>
             </footer>
         </div>
     );
