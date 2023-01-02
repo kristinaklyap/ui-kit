@@ -11,6 +11,7 @@ import TextFieldPage from "./pages/TextFieldPage";
 import QuotePage from "./pages/QuotePage";
 import TitlePage from "./pages/TitlePage";
 import Header from "./layout/header/Header";
+import TextField from "./components/TextField/TextField";
 
 function App() {
     const [theme, setTheme] = useState("light");
@@ -35,6 +36,9 @@ function App() {
                     <Route path="/title" element={<TitlePage/>}/>
                 </Routes>
             </main>
+            <footer>
+                <TextField tag={'h6'} size={'disclaimer'} weight={'light'} label={'® Created by Kristina Klyap'}/>
+            </footer>
         </div>
     );
 }
