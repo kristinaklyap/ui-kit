@@ -54,7 +54,7 @@ Start storybook
 
 
 ```bash
-  npm run start
+  npm run storybook
 ```
 
 Run tests
