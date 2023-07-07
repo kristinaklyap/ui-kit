@@ -97,4 +97,4 @@ Run tests
 
  ```
 ## Sample component
-
+![Avatar component](https://github.com/kristinaklyap/ui-kit/assets/29305407/a72b696d-7a91-4361-9042-5294c218254d)
